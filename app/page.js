@@ -3,7 +3,7 @@
 export default function Home() {
 
   async function sendData() {
-    const response = await fetch("PASTE_YOUR_N8N_WEBHOOK_URL_HERE", {
+    const response = await fetch("http://localhost:5678/webhook/cdss-intake", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
